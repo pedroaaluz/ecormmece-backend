@@ -1,0 +1,8 @@
+{
+    "body":{
+        "name": "Minions e Gru",
+        "price": 80.00,
+        "description": "Reserve já a turminha inteira! Com Gru para fazendo planos do mal e os minions para ajuda-lo na execução desses planos a brincadeira fica mais diversida!",
+        "s3ImageUrl": "https://minions-images.s3.amazonaws.com/minions-pack-personagens.jpg"
+    }
+}
