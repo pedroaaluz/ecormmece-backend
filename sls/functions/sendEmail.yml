@@ -1,0 +1,7 @@
+SendEmail:
+  handler: src/functions/sendEmail.main
+  events:
+    - http:
+        method: get
+        path: send-email
+        cors: true

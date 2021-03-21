@@ -1,0 +1,13 @@
+NewProduct:
+  handler: src/functions/newProduct.main
+  events:
+    - http:
+        method: post
+        path: products
+        cors: true
+        authorizer: aws_iam
+  iamRoleStatementsName: newProduct-lambdaRole      
+  iamRoleStatements:
+    - Effect: Allow
+      Action: dynamodb:PutItem
+      Resource: arn:aws:dynamodb:us-east-1:108264628833:table/minions-shop-products

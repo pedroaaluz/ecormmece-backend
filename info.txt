@@ -1,0 +1,19 @@
+ID do grupo us-east-1_ASP0I2SsT
+ARN do grupo arn:aws:cognito-idp:us-east-1:108264628833:userpool/us-east-1_ASP0I2SsT
+ID client app: 78r8c6kbq88jhogiiafj6lfl6k
+
+
+aws cognito-idp sign-up \
+  --region us-east-1 \
+  --client-id 78r8c6kbq88jhogiiafj6lfl6k \
+  --username admin@example.com \
+  --password Passw0rd!
+
+
+  aws cognito-idp admin-confirm-sign-up \
+  --region us-east-1 \
+  --user-pool-id us-east-1_ASP0I2SsT \
+  --username admin@example.com
+
+
+  

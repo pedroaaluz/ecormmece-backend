@@ -1,0 +1,19 @@
+{
+    "Version": "2008-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::minions-shop-dev-serverlessdeploymentbucket-1ru9mdk22cz9a/*",
+                "arn:aws:s3:::minions-shop-dev-serverlessdeploymentbucket-1ru9mdk22cz9a"
+            ],
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                }
+            }
+        }
+    ]
+}

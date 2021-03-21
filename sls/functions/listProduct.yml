@@ -1,0 +1,11 @@
+ListProduct:
+  handler: src/functions/listProduct.main
+  events:
+    - http:
+        method: get
+        path: products/
+  iamRoleStatementsName: listProduct-lambdaRole      
+  iamRoleStatements:
+    - Effect: Allow
+      Action: dynamodb:Scan
+      Resource: arn:aws:dynamodb:us-east-1:108264628833:table/minions-shop-products
